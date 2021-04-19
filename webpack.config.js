@@ -42,6 +42,11 @@ module.exports = {
     }),
     new ESLintPlugin(),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
   module: {
     rules: [
       {
@@ -51,6 +56,10 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: cssLoaders('sass-loader'),
+      },
+      {
+        test: /\.(png|jpg|svg)$/,
+        use: ['file-loader'],
       },
     ],
   },
