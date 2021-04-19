@@ -10893,15 +10893,34 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./index.scss":
-/*!********************!*\
-  !*** ./index.scss ***!
-  \********************/
+/***/ "./style/scss/main.scss":
+/*!******************************!*\
+  !*** ./style/scss/main.scss ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./style/js/main.js":
+/*!**************************!*\
+  !*** ./style/js/main.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/main.scss */ "./style/scss/main.scss");
+
+
+
+jquery__WEBPACK_IMPORTED_MODULE_0__('.app').css('width', '600px');
 
 
 /***/ })
@@ -10982,15 +11001,10 @@ var __webpack_exports__ = {};
   !*** ./index.js ***!
   \******************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./index.scss");
-
+/* harmony import */ var _style_js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/js/main.js */ "./style/js/main.js");
 
 
 console.log('hello world');
-
-jquery__WEBPACK_IMPORTED_MODULE_0__('.app').css('width', '600px')
 
 for (let i = 0; i < 10; i++) {
   console.log('test number:' + i);
