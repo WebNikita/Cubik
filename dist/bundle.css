@@ -1,7 +1,42 @@
+body {
+  margin: 0; }
+
 .app {
   background-color: green;
   width: 1px;
   height: 200px; }
+
+.header {
+  background-color: #F9F9F9;
+  width: auto;
+  height: 100px; }
+
+.footer {
+  background-color: #F9F9F9;
+  width: auto;
+  height: 100px; }
+
+body {
+  margin: 0; }
+
+.app {
+  background-color: green;
+  width: 1px;
+  height: 200px; }
+
+.header {
+  background-color: #F9F9F9;
+  width: auto;
+  height: 100px; }
+
+.footer {
+  background-color: #F9F9F9;
+  width: auto;
+  height: 100px; }
+
+.content {
+  width: auto;
+  height: 100px; }
 
 
 /*# sourceMappingURL=bundle.css.map*/

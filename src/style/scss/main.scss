@@ -1,7 +1,23 @@
 $color: green;
 
+body{
+    margin: 0;
+}
+
 .app{
     background-color: $color;
     width: 1px;
     height: 200px;
+}
+
+.header{
+    background-color: #F9F9F9;
+    width: auto;
+    height: 100px;
+}
+
+.footer{
+    background-color: #F9F9F9;
+    width: auto;
+    height: 100px;
 }

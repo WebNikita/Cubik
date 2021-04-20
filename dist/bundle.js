@@ -10893,6 +10893,19 @@ return jQuery;
 
 /***/ }),
 
+/***/ "./index.scss":
+/*!********************!*\
+  !*** ./index.scss ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./style/scss/main.scss":
 /*!******************************!*\
   !*** ./style/scss/main.scss ***!
@@ -11001,14 +11014,10 @@ var __webpack_exports__ = {};
   !*** ./index.js ***!
   \******************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/js/main.js */ "./style/js/main.js");
+/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/js/main.js */ "./style/js/main.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./index.scss");
 
 
-console.log('hello world');
-
-for (let i = 0; i < 10; i++) {
-  console.log('test number:' + i);
-}
 
 })();
 
