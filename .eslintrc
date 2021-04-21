@@ -8,6 +8,7 @@
     "node": true
   },
   "rules": {
+    "no-invalid-this": "off",
     "linebreak-style": "off",
     "require-jsdoc": "off",
     "operator-linebreak": "off"
