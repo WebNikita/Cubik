@@ -44,6 +44,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
+      '@core': path.resolve(__dirname, 'src/core'),
       '@': path.resolve(__dirname, 'src'),
     },
   },
@@ -58,8 +59,20 @@ module.exports = {
         use: cssLoaders('sass-loader'),
       },
       {
-        test: /\.(png|jpg|svg)$/,
-        use: ['file-loader'],
+        test: /\.html$/,
+        loader: 'html-loader',
+        options: {
+          esModule: false,
+        },
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            esModule: false,
+          },
+        }],
       },
     ],
   },
