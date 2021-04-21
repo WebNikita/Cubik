@@ -58,8 +58,20 @@ module.exports = {
         use: cssLoaders('sass-loader'),
       },
       {
+        test: /\.html$/,
+        loader: 'html-loader',
+        options: {
+          esModule: false,
+        },
+      },
+      {
         test: /\.(png|jpg|svg)$/,
-        use: ['file-loader'],
+        use: [{
+          loader: 'file-loader',
+          options: {
+            esModule: false,
+          },
+        }],
       },
     ],
   },
