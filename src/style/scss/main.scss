@@ -1,26 +1,17 @@
-$color: #9bfd9bee;
-
-body{
-    margin: 0;
-}
-
-.app{
-    background-color: $color;
-    width: 1px;
-    height: 200px;
-}
+@import "valid";
 
 .header{
-    background-color: $color;
+    background-color: #fff;
     width: auto;
     height: 100px;
     &__slider{
+        color: $blue;
         width: 100px;
     }
 }
 
 .footer{
-    background-color: $color;
+    background-color: $blue;
     width: auto;
     height: 100px;
 }

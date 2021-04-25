@@ -1,4 +1,18 @@
+@import "valid";
+
 .content{
     width: auto;
-    height: 100px;
+    height: auto;
+}
+
+.block__sidebar{
+    height: 269px;
+    background-color: $gray__line;
+}
+
+.block__card{
+    width: 0;
+    .card__product{
+
+    }
 }
