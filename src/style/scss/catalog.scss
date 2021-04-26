@@ -1,9 +1,5 @@
 @import "valid";
-
-.content{
-    width: auto;
-    height: auto;
-}
+@import "grid";
 
 .block__sidebar{
     height: 269px;
@@ -11,8 +7,30 @@
 }
 
 .block__card{
-    width: 0;
-    .card__product{
+    width: auto;
+    height: auto;
+    .card{
+        width: 350px;
+        height: 600px;
+        background-color: $gray__text;
+        &__img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
+            background-color: $gray__product-back;
+            width: auto;
+            height: 500px;
+        }
+        &__text{
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: flex-end;
+            // align-items: flex-start;
+            // align-content: flex-end;
+            // flex-wrap: nowrap;
+            height: 100px;
+        }
+        
     }
 }
