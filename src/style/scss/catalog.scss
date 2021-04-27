@@ -23,13 +23,16 @@
             height: 500px;
         }
         &__text{
-            // display: flex;
-            // flex-direction: column;
+            display: flex;
+            flex-direction: column;
             // justify-content: flex-end;
-            // align-items: flex-start;
+            // align-items: flex-end;
             // align-content: flex-end;
             // flex-wrap: nowrap;
             height: 100px;
+            .price{
+                margin-top: auto;
+            }
         }
         
     }
