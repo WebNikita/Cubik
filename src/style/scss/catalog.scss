@@ -1,5 +1,6 @@
 @import "valid";
 @import "grid";
+// @import "font";
 
 .block__sidebar{
     height: 269px;
@@ -12,7 +13,7 @@
     .card{
         width: 350px;
         height: 600px;
-        background-color: $gray__text;
+        // background-color: $gray__text;
         &__img{
             display: flex;
             align-items: center;
@@ -30,8 +31,40 @@
             // align-content: flex-end;
             // flex-wrap: nowrap;
             height: 100px;
-            .price{
+            .low{
                 margin-top: auto;
+                display: flex;
+                // align-items: flex-end;
+                &__price{
+                    margin-top: auto;
+
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                &__hint{
+                    margin-left: auto;
+                    // width: 100px;
+                    display: flex;
+                    p{
+                        margin: 0 0 5px 10px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: $blue;
+                        text-align: center;
+
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 11px;
+                        line-height: 16px;
+
+                        color: white;
+                    }
+                }
             }
         }
         
