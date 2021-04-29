@@ -1,3 +1,3 @@
 import '@js/main.js';
-import '@js/header__slider.js';
+import '@js/sidebar__filter.js';
 import './index.scss';
