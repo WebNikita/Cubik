@@ -1,0 +1,56 @@
+%display_none{
+    display: none;
+}
+
+%display_block{
+    display: block;
+}
+
+@mixin transform($property){
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+%cursor_up{
+    @include transform(rotate(180deg));
+}
+
+.filter_first{
+    &_one-content{
+        @extend %display_none;
+    }
+    &_two-content{
+        @extend %display_none;
+    }
+    &_three-content{
+        @extend %display_none;
+    }
+    &_four-content{
+        @extend %display_none;
+    }
+    &_one-button.on{
+        @extend %cursor_up;
+    }
+    &_two-button.on{
+        @extend %cursor_up;
+    }
+    &_three-button.on{
+        @extend %cursor_up;
+    }
+    &_four-button.on{
+        @extend %cursor_up;
+    }
+    &_one-content.on{
+        @extend %display_block;
+    }
+    &_two-content.on{
+        @extend %display_block;
+    }
+    &_three-content.on{
+        @extend %display_block;
+    }
+    &_four-content.on{
+        @extend %display_block;
+    }                   
+}

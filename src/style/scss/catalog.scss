@@ -1,6 +1,12 @@
 @import "valid";
 @import "grid";
+@import "animation";
 // @import "font";
+
+.select{
+    text-decoration: underline;
+    color: $blue_hover;
+}
 
 .block__sidebar{
     display: flex;
@@ -10,20 +16,103 @@
     margin-bottom: 130px;
     height: 44px;
     // background-color: $gray__line;
+    
+    .sidebar__list{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 42px;
+        width: 350px;
+        // min-height: 128px;
+        // justify-content: space-between;
+        li{
+            // text-transform: uppercase;
+            // font-family: Inter;
+            // font-style: normal;
+            // font-weight: 500;
+            // font-size: 12px;
+            // line-height: 15px;
 
-    .sidebar__filter{
-        ul{
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-column-gap: 42px;
-            justify-content: space-between;
-            // align-content: flex-start;
-            li{
-                // margin-left: auto;
-                // display: flex;
-                list-style: none;
+            list-style: none;
+        }
+        
+
+        &_filter{
+            @extend %display_none;
+            position: absolute;
+            grid-template-columns: auto;
+            width: 350px;
+            padding-top: 10px;
+            // padding-top: 20px;
+            background-color: white;
+            
+            ul{
+                li{
+                    padding-bottom: 5px;
+                    cursor: pointer;
+                }
+                li:first-child{
+                    padding-top: 20px;
+                }
+                li:last-child{
+                    padding-bottom: 25px;
+                }
+                li:hover{
+                    text-decoration: underline;
+                }
+                .filter_first_one-head{
+                    padding: 20px 0 10px 0;
+                }
+                p{
+                    cursor: pointer;
+                    padding-bottom: 10px;
+                }
+            }
+            &_fourth{
+                li:last-child{
+                    padding-bottom: 10px;
+                }
             }
         }
+
+        
+
+        &_sort{
+            @extend %display_none;
+            position: absolute;
+            grid-template-columns: auto;
+            width: 175px;
+            padding-top: 10px;
+            background-color: whitez;
+            li{
+                padding-bottom: 10px;
+            }
+            li:first-child{
+                padding-top: 20px;
+            }
+            li:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+        &_reveal{
+            @extend %display_none;
+            position: absolute;
+            grid-template-columns: auto;
+            width: 82px;
+            padding-top: 10px;
+            background-color: white;
+            li{
+                padding-bottom: 10px;
+            }
+            li:first-child{
+                padding-top: 20px;
+            }
+            li:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+        
     }
 }
 
@@ -46,45 +135,17 @@
         &__text{
             display: flex;
             flex-direction: column;
-            // justify-content: flex-end;
-            // align-items: flex-end;
-            // align-content: flex-end;
-            // flex-wrap: nowrap;
             height: 100px;
-            .low{
+            &_low{
                 margin-top: auto;
                 display: flex;
                 // align-items: flex-end;
-                &__price{
-                    margin-top: auto;
 
-                    font-family: Inter;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 20px;
-                    line-height: 24px;
-                }
-
-                &__hint{
-                    margin-left: auto;
-                    // width: 100px;
-                    display: flex;
-                    p{
-                        margin: 0 0 5px 10px;
-                        width: 20px;
-                        height: 20px;
-                        background-color: $blue;
-                        text-align: center;
-
-                        font-family: Inter;
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 11px;
-                        line-height: 16px;
-
-                        color: white;
-                    }
-                }
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
             }
         }
         
