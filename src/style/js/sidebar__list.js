@@ -68,4 +68,6 @@ $('.filter_first').children().click(function() {
   $(this).toggleClass('select');
 });
 
-
+$('.page__list').children().click(function() {
+  $(this).toggleClass('select_page');
+});
