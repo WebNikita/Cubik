@@ -1,17 +1,2 @@
-@import "valid";
-
-.header{
-    background-color: #fff;
-    width: auto;
-    height: 100px;
-    &__slider{
-        color: $blue;
-        width: 100px;
-    }
-}
-
-.footer{
-    background-color: $blue;
-    width: auto;
-    height: 100px;
-}
+@import "catalog.scss";
+@import "product.scss";
