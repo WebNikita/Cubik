@@ -1,4 +1,4 @@
-import * as $ from 'jquery';
+// import * as $ from 'jquery';
 import '@scss/main.scss';
 
-$('.app').css('width', '600px');
+// $('.app').css('width', '600px');

@@ -1,2 +1,50 @@
 @import "valid";
 @import "grid";
+
+.block__product_preview{
+    // background-color: $black;
+    &_first{
+        
+        li{
+            list-style: none;
+            margin-bottom: 50px;
+        }
+        li:first-child{
+            margin-top: 25px;
+        }
+        img{
+            width: 64px;
+            height: 184px;
+        }
+    }
+    &_second{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .preview{
+            &__button{
+                margin-bottom: 25px;
+            }
+            &__img{
+                width: 250px;
+                height: 710px;
+                margin-top: 25px;
+            }
+        }
+    }
+    &_third{
+        &-top{
+
+        }
+        &-center{
+
+        }
+        &-bottom{
+
+        }
+    }
+}
+
+.block__product_info{
+    
+}

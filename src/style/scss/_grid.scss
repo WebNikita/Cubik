@@ -6,9 +6,24 @@
     justify-content: center;
 }
 
-.container__product{
+.container__product_preview{
     display: grid;
+    grid-template-columns: 64px 466px 350px;
+    grid-template-rows: 735px;
+    grid-column-gap:160px;
+    
+    margin-top: 70px !important;
+ }
+ 
 
+.container__product_info{
+    display: grid;
+    grid-template-columns: 125px 527px 352px;
+    grid-template-rows: 366px;
+    grid-column-gap:99px;
+    
+    margin-top: 150px !important;
+    
 }
 
 .container{
