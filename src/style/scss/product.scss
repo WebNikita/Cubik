@@ -1,6 +1,10 @@
 @import "valid";
 @import "grid";
 
+.blur{
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+}
+
 .block__product_preview{
     // background-color: $black;
     &_first{

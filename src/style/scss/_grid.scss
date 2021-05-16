@@ -23,7 +23,9 @@
     grid-column-gap:99px;
     
     margin-top: 150px !important;
-    
+
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 }
 
 .container{
