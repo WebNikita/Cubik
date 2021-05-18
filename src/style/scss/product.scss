@@ -56,6 +56,9 @@
                 width: 350px;
                 height: 60px;
             }
+            &_price-counter{
+                display: flex;
+            }
         }
     }
 }
@@ -71,4 +74,11 @@
     svg:hover{
         cursor: pointer;
     }
+}
+
+.block__size{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
