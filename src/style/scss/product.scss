@@ -11,26 +11,19 @@
 .block__product_preview{
     // background-color: $black;
     &_first{
-        
-        li{
-            list-style: none;
-            margin-bottom: 50px;
-        }
-        li:first-child{
-            margin-top: 25px;
-        }
-        img{
-            width: 64px;
-            height: 184px;
-        }
-    }
-    &_second{
+        background-color: $gray__product-back_hover;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .preview{
             &__button{
                 margin-bottom: 25px;
+                &_prev{
+                    margin-left: 30px;
+                }
+                &_next{
+                    margin-right: 30px;
+                }
             }
             &__img{
                 width: 250px;
@@ -39,7 +32,7 @@
             }
         }
     }
-    .block__product_third{
+    &_second{
         &-top{
 
         }
@@ -76,9 +69,58 @@
     }
 }
 
-.block__size{
-    display: block;
+.container{
+    // opacity: 0.5;
+}
+
+.block__append-to-card{
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100vw;
+    // height: 900px;
+    background-color: white;
+    &_title{
+        margin-top: 50px;
+        margin-bottom: 73px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_counter{
+        display: flex;
+        .counter_price{
+            display: flex;
+        }
+    }
+    &_bottom{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        p{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-color: $blue;
+            color: white;
+            width: 350px;
+            height: 60px;
+        }
+    }
+}
+
+.block__size{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    // height: 900px;
+    background-color: white;
+    &_title{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
 }

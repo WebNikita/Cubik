@@ -8,9 +8,9 @@
 
 .container__product_preview{
     display: grid;
-    grid-template-columns: 64px 466px 350px;
-    grid-template-rows: 735px;
-    grid-column-gap:160px;
+    grid-template-columns: 682px 350px;
+    grid-template-rows: 777px;
+    grid-column-gap:168px;
     
     margin-top: 70px !important;
  }
@@ -31,4 +31,16 @@
 .container{
     max-width: 1200px;
     margin: auto;
+}
+
+.container__append-to-card{
+    display: grid;
+    grid-template-columns: 600px;
+    justify-content: center;
+}
+
+.container__size{
+    display: grid;
+    grid-template-columns: 1200px;
+    justify-content: center;
 }
