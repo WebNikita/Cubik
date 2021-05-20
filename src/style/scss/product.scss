@@ -123,4 +123,101 @@
         display: flex;
         justify-content: space-between;
     }
+    li{
+        list-style: none;
+    }
+    .size_content{
+        &_men{
+            &_table{
+                display: none;
+
+                &_table-first{
+                    display: grid;
+                    grid-template-columns: 130px 82px;
+                    grid-column-gap: 70px;
+                }
+                &_table-second{
+                    display: grid;
+                    grid-template-columns: 144px 62px 62px 62px 62px 62px;
+                    grid-column-gap: 70px;
+                }
+            }
+        }
+        &_women{
+            &_table{
+                display: none;
+
+                &_table-first{
+                    display: grid;
+                    grid-template-columns: 130px 82px;
+                    grid-column-gap: 70px;
+                }
+                &_table-second{
+                    display: grid;
+                    grid-template-columns: 144px 62px 62px 62px 62px 62px;
+                    grid-column-gap: 70px;
+                }
+            }
+        }
+        &_shoes{
+            &_table{
+                display: none;
+
+                &_table-first{
+                    display: grid;
+                    grid-template-columns: 140px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+                    grid-column-gap: 50px;
+                }
+                &_table-second{
+                    display: grid;
+                    grid-template-columns: 140px 30px 30px 30px 30px 30px 30px 30px;
+                    grid-column-gap: 50px;
+                }
+                &_table-third{
+                    display: grid;
+                    grid-template-columns: 24px 24px 24px 24px 24px 24px 24px 24px;
+                    grid-column-gap: 50px;
+                }
+                &_table-four{
+                    display: grid;
+                    grid-template-columns: 24px 56px 56px;
+                    grid-column-gap: 50px;
+                }
+            }
+        }
+        &_shirt{
+            &_table{
+                display: none;
+
+                &_table-first{
+                    display: grid;
+                    grid-template-columns: 95px 82px 74px;
+                    grid-column-gap: 70px;
+                }
+            }
+        }
+        &_tee{
+            &_table{
+                display: none;
+                
+                &_table-first{
+                    display: grid;
+                    grid-template-columns: 54px 54px 54px 54px 54px 54px;
+                    grid-column-gap: 50px;
+                }
+            }
+        }
+        &_glove{
+            &_table{
+                display: none;
+
+                &_table-first{
+                    display: grid;
+                    grid-template-columns: 14px 14px 14px 24px;
+                    grid-column-gap: 50px;
+                }
+            }
+        }
+    }
+    
 }

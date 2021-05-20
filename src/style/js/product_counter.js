@@ -1,9 +1,9 @@
 import * as $ from 'jquery';
 let count = 0;
-const text = $('.block__product_third-top_price').prop('innerText');
+const text = $('.block__product_preview_second-top_price').prop('innerText');
 const inter = parseInt(text);
 
-$('.plus').click(function() {
+$('.plus').on('click', function() {
   count++;
   const price =inter*count;
   $('.end_price').html(price + ' Р');
@@ -12,7 +12,7 @@ $('.plus').click(function() {
   console.log(price);
 });
 
-$('.minus').click(function() {
+$('.minus').on('click', function() {
   if (count >= 1) {
     const end = $('.end_price').prop('innerText');
     const price = parseInt(end);
@@ -24,15 +24,3 @@ $('.minus').click(function() {
     console.log(price);
   }
 });
-
-// let counter = 0;
-// counter += inter;
-// console.log(counter);
-// counter += inter;
-// console.log(counter);
-// counter += inter;
-// console.log(text);
-
-
-// console.log(inter);
-// console.log(counter);

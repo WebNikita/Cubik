@@ -2,7 +2,7 @@ import * as $ from 'jquery';
 
 // Открытие фильтра
 
-$('.sidebar__filter').hover(function() {
+$('.sidebar__filter').on('hover', function() {
   $(this).children('p').css('color', '#4C95BD');
   $('.sidebar__list_filter').css('display', 'block');
   $('.filter__button').children().css('fill', '#4C95BD');
@@ -16,7 +16,7 @@ $('.sidebar__filter').hover(function() {
 
 // Открытие сортировки
 
-$('.sidebar__sort').hover(function() {
+$('.sidebar__sort').on('hover', function() {
   $(this).children('p').css('color', '#4C95BD');
   $('.sidebar__list_sort').css('display', 'block');
   $('.sort__button').children().css('fill', '#4C95BD');
@@ -30,7 +30,7 @@ $('.sidebar__sort').hover(function() {
 
 // Открытие показать
 
-$('.sidebar__reveal').hover(function() {
+$('.sidebar__reveal').on('hover', function() {
   $(this).children('p').css('color', '#4C95BD');
   $('.sidebar__list_reveal').css('display', 'block');
   $('.reveal__button').children().css('fill', '#4C95BD');
@@ -44,30 +44,30 @@ $('.sidebar__reveal').hover(function() {
 
 // Открытие категорий
 
-$('.filter_first_one-head').click(function() {
+$('.filter_first_one-head').on('click', function() {
   $('.filter_first_one-button').toggleClass('on');
   $('.filter_first_one-content').toggleClass('on');
 });
 
-$('.filter_first_two-head').click(function() {
+$('.filter_first_two-head').on('click', function() {
   $('.filter_first_two-button').toggleClass('on');
   $('.filter_first_two-content').toggleClass('on');
 });
 
-$('.filter_first_three-head').click(function() {
+$('.filter_first_three-head').on('click', function() {
   $('.filter_first_three-button').toggleClass('on');
   $('.filter_first_three-content').toggleClass('on');
 });
 
-$('.filter_first_four-head').click(function() {
+$('.filter_first_four-head').on('click', function() {
   $('.filter_first_four-button').toggleClass('on');
   $('.filter_first_four-content').toggleClass('on');
 });
 
-$('.filter_first').children().click(function() {
+$('.filter_first').children().on('click', function() {
   $(this).toggleClass('select');
 });
 
-$('.page__list').children().click(function() {
+$('.page__list').children().on('click', function() {
   $(this).toggleClass('select_page');
 });
