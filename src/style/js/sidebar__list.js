@@ -2,7 +2,7 @@ import * as $ from 'jquery';
 
 // Открытие фильтра
 
-$('.sidebar__filter').on('hover', function() {
+$('.sidebar__filter').hover(function() {
   $(this).children('p').css('color', '#4C95BD');
   $('.sidebar__list_filter').css('display', 'block');
   $('.filter__button').children().css('fill', '#4C95BD');
@@ -16,7 +16,7 @@ $('.sidebar__filter').on('hover', function() {
 
 // Открытие сортировки
 
-$('.sidebar__sort').on('hover', function() {
+$('.sidebar__sort').hover(function() {
   $(this).children('p').css('color', '#4C95BD');
   $('.sidebar__list_sort').css('display', 'block');
   $('.sort__button').children().css('fill', '#4C95BD');
@@ -30,7 +30,7 @@ $('.sidebar__sort').on('hover', function() {
 
 // Открытие показать
 
-$('.sidebar__reveal').on('hover', function() {
+$('.sidebar__reveal').hover(function() {
   $(this).children('p').css('color', '#4C95BD');
   $('.sidebar__list_reveal').css('display', 'block');
   $('.reveal__button').children().css('fill', '#4C95BD');

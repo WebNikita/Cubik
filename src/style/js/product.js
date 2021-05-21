@@ -1,4 +1,5 @@
 import * as $ from 'jquery';
+import '@js/slick.js';
 
 const $button = $('.block__product_preview_second-bottom_button-append');
 console.log($button);
@@ -20,3 +21,7 @@ $('.close').on('click', function() {
   $('.block__size').css('display', 'none');
   $('.container').css('opacity', '1');
 });
+
+// $('.slider').slick({
+
+// });

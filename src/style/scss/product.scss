@@ -8,6 +8,10 @@
     transform: rotate(180deg);
 }
 
+.display_block{
+    display: block !important;
+}
+
 .block__product_preview{
     // background-color: $black;
     &_first{
@@ -69,10 +73,6 @@
     }
 }
 
-.container{
-    // opacity: 0.5;
-}
-
 .block__append-to-card{
     display: none;
     position: absolute;
@@ -128,93 +128,198 @@
     }
     .size_content{
         &_men{
+            p{
+                margin: 15px 0 15px 50px;
+            }
             &_table{
                 display: none;
 
-                &_table-first{
+                p:first-child{
+                    margin-top: 70px;
+                }
+                p{
+                    margin-top: 100px;
+                    margin-bottom: 50px;
+                }
+                &-first{
                     display: grid;
                     grid-template-columns: 130px 82px;
                     grid-column-gap: 70px;
+                    margin-left: 50px;
+
+                    li{
+                        padding-bottom: 13px;
+                    }
+                    li:last-child{
+                        padding-bottom: 0px;
+                    }
                 }
-                &_table-second{
+                &-second{
                     display: grid;
                     grid-template-columns: 144px 62px 62px 62px 62px 62px;
                     grid-column-gap: 70px;
+                    margin-bottom: 70px;
+                    margin-left: 50px;
+
+                    li{
+                        padding-bottom: 30px;
+                    }
+                    li:last-child{
+                        padding-bottom: 0px;
+                    }
                 }
             }
         }
         &_women{
+            p{
+                margin: 15px 0 15px 50px;
+            }
             &_table{
                 display: none;
 
-                &_table-first{
+                p:first-child{
+                    margin-top: 70px;
+                }
+                p{
+                    margin-top: 100px;
+                    margin-bottom: 50px;
+                }
+                &-first{
                     display: grid;
                     grid-template-columns: 130px 82px;
                     grid-column-gap: 70px;
+                    margin-left: 50px;
+
+                    li{
+                        padding-bottom: 13px;
+                    }
+                    li:last-child{
+                        padding-bottom: 0px;
+                    }
                 }
-                &_table-second{
+                &-second{
                     display: grid;
                     grid-template-columns: 144px 62px 62px 62px 62px 62px;
                     grid-column-gap: 70px;
+                    margin-bottom: 70px;
+                    margin-left: 50px;
+
+                    li{
+                        padding-bottom: 30px;
+                    }
+                    li:last-child{
+                        padding-bottom: 0px;
+                    }
                 }
             }
         }
         &_shoes{
+            p{
+                margin: 15px 0 15px 50px;
+            }
             &_table{
                 display: none;
 
-                &_table-first{
+                p:first-child{
+                    margin-top: 70px;
+                }
+                p{
+                    margin-top: 100px;
+                    margin-bottom: 50px;
+                }
+                li{
+                    padding-bottom: 30px;
+                }
+                li:last-child{
+                    padding-bottom: 0;
+                }
+                &-first{
                     display: grid;
                     grid-template-columns: 140px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
                     grid-column-gap: 50px;
+                    margin-left: 50px;
                 }
-                &_table-second{
+                &-second{
                     display: grid;
                     grid-template-columns: 140px 30px 30px 30px 30px 30px 30px 30px;
                     grid-column-gap: 50px;
+                    margin-left: 50px;
                 }
-                &_table-third{
+                &-third{
                     display: grid;
                     grid-template-columns: 24px 24px 24px 24px 24px 24px 24px 24px;
                     grid-column-gap: 50px;
+                    margin-left: 50px;
                 }
-                &_table-four{
+                &-four{
                     display: grid;
                     grid-template-columns: 24px 56px 56px;
                     grid-column-gap: 50px;
+                    margin-bottom: 70px;
+                    margin-left: 50px;
                 }
             }
         }
         &_shirt{
+            p{
+                margin: 15px 0 15px 50px;
+            }
             &_table{
                 display: none;
-
-                &_table-first{
+                li{
+                    padding-bottom: 30px;
+                }
+                li:last-child{
+                    padding-bottom: 0;
+                }
+                &-first{
                     display: grid;
                     grid-template-columns: 95px 82px 74px;
                     grid-column-gap: 70px;
+                    margin: 70px 0 70px 50px;
                 }
             }
         }
         &_tee{
+            p{
+                margin: 15px 0 15px 50px;
+            }
             &_table{
                 display: none;
                 
-                &_table-first{
+                li{
+                    padding-bottom: 30px;
+                }
+                li:last-child{
+                    padding-bottom: 0;
+                }
+                &-first{
                     display: grid;
                     grid-template-columns: 54px 54px 54px 54px 54px 54px;
                     grid-column-gap: 50px;
+                    margin: 70px 0 70px 50px;
+                    
                 }
             }
         }
         &_glove{
+            p{
+                margin: 15px 0 15px 50px;
+            }
             &_table{
                 display: none;
 
-                &_table-first{
+                li{
+                    padding-bottom: 30px;
+                }
+                li:last-child{
+                    padding-bottom: 0;
+                }
+                &-first{
                     display: grid;
                     grid-template-columns: 14px 14px 14px 24px;
                     grid-column-gap: 50px;
+                    margin: 70px 0 70px 50px;
                 }
             }
         }

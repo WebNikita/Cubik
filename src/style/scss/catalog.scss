@@ -17,8 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 95px;
-    margin-bottom: 130px;
+    margin-top: 95px !important;
+    margin-bottom: 130px !important;
     height: 44px;
     // background-color: $gray__line;
     
@@ -152,7 +152,7 @@
 .block__page{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 150px;
+    margin-bottom: 150px !important;
     .page__next{
         margin-left:20px;
         .arrow_next{
