@@ -47,6 +47,7 @@ module.exports = {
       '@core': path.resolve(__dirname, 'src/core'),
       '@': path.resolve(__dirname, 'src'),
     },
+    // extensions: [js],
   },
   module: {
     rules: [
@@ -73,6 +74,10 @@ module.exports = {
             esModule: false,
           },
         }],
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/,
+        use: ['file-loader'],
       },
     ],
   },
