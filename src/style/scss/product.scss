@@ -17,24 +17,24 @@
     &_first{
         background-color: $gray__product-back_hover;
         display: flex;
-        justify-content: space-between;
+        // justify-content: center;
         align-items: center;
-        .preview{
-            &__button{
-                margin-bottom: 25px;
-                &_prev{
-                    margin-left: 30px;
-                }
-                &_next{
-                    margin-right: 30px;
-                }
-            }
-            &__img{
-                width: 250px;
-                height: 710px;
-                margin-top: 25px;
-            }
-        }
+        // .preview{
+        //     &__button{
+        //         margin-bottom: 25px;
+        //         &_prev{
+        //             margin-left: 30px;
+        //         }
+        //         &_next{
+        //             margin-right: 30px;
+        //         }
+        //     }
+        //     &__img{
+        //         width: 250px;
+        //         height: 710px;
+        //         margin-top: 25px;
+        //     }
+        // }
     }
     &_second{
         &-top{

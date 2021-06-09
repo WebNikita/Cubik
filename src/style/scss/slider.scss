@@ -1,0 +1,132 @@
+// body{
+//     margin: 0 auto;
+//     padding: 1rem;
+//     max-width: 900px;
+
+// }
+
+.slide{
+    display: flex;
+    justify-content: center;
+}
+
+.slide img{
+    // position: relative;
+    // margin: 0 auto;
+    width: 250px;
+    height: 710px;
+    
+    // width: 100%;
+    pointer-events: none;
+}
+
+.slider{
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    padding: 0 3rem;
+}
+
+.slider-draggable{
+    cursor: grabbing;
+}
+
+.slider-line{
+overflow: hidden;
+}
+
+.slider-line-container{
+    overflow: hidden;
+}
+
+.slider-slide{
+    // width: 585px;
+    // min-height: 1px;
+    float: left;
+    overflow: hidden;
+    transform: translateZ(0);
+    // overflow: hidden;
+}
+
+.slider-dots{
+    display: flex;
+    justify-content: center;
+}
+
+.slider-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(179, 179, 179);
+    margin: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.slider-dot:hover,
+.slider-dot-active {
+    background-color: rgb(100, 100, 100);
+}
+
+.slider-nav{
+    min-width: 1px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0;
+}
+
+/* .slider-nav button {
+    margin: 0.5rem;
+    cursor: pointer;
+} */
+
+.slider-nav-left,
+.slider-nav-right{
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    /* text-indent: -1223em; */
+    top: 50%;
+    margin-top: -4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slider-nav-left{
+    /* background: url('./svg/right.svg') no-repeat center; */
+    /* background-size: contain; */
+    left: 0;
+}
+
+.slider-nav-right{
+    /* background: url('./svg/left.svg') no-repeat center; */
+    /* background-size: contain; */
+    right: 0;
+}
+
+.slider-nav-disabled{
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.slider-dot{
+    display: none;
+}
+
+@media screen and (max-width: 780px){
+    .slider{
+        padding: 0;
+    }
+
+    .slider-nav{
+        display: none;
+    }
+}
