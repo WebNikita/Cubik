@@ -1,11 +1,16 @@
 @import "valid";
 @import "grid";
 
-.container__product_info.blur{
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-}
+// .container__product_info.blur{
+//     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+// }
+
 .rotate{
     transform: rotate(180deg);
+}
+
+.close{
+    cursor: pointer;
 }
 
 .display_block{
@@ -38,13 +43,85 @@
     }
     &_second{
         &-top{
+            &_name{
+                padding-top: 20px;
 
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: 0.03em;
+
+            }
+            &_price{
+                padding-top: 30px;
+
+                color: $blue;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 44px;
+            }
         }
         &-center{
+            &_size{
+                padding-top: 70px;
+                p:first-child{
+                    padding-bottom: 10px;
+                    color: $gray__title;
+
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                p{
+                    color: $black;
+
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+            &_info{
+                padding-top: 15px;
+
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                text-decoration-line: underline;
+                .open-size{
+                    cursor: pointer;
+                }
+            }
+            &_choice{
+                padding-top: 35px;
+                color: $blue;
+
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+
+                .choice-size{
+                    cursor: pointer;
+                }
+            }
 
         }
         &-bottom{
             &_button-append{
+                cursor: pointer;
+                margin-top: 100px;
+
                 display: flex;
                 justify-content: center;
                 align-items:center;
@@ -52,16 +129,89 @@
                 color: white;
                 width: 350px;
                 height: 60px;
+
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
             }
-            &_price-counter{
-                display: flex;
+            &_ability{
+                padding-top: 30px;
+                color: $gray__text;
+
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+
+                text-decoration-line: underline;
             }
         }
     }
 }
 
 .block__product_info{
-    
+    &_title{
+        color: $gray__title;
+        padding-bottom: 10px;
+        
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &_text{
+        color: $black;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &_list{
+        color: $black;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &_first{
+        &_gost{
+            margin-top: 40px;
+        }
+    }
+    &_second{
+        li{
+            margin-left: 1rem;
+        }
+        &_top{
+            margin-top: 40px;
+            p{
+                padding-bottom: 10px;
+            }
+        }
+        &_bottom{
+            margin-top: 25px;
+            p{
+                padding-bottom: 10px;
+            }
+        }
+    }
+    &_third{
+        li{
+            list-style: none;
+        }
+        &_size{
+            margin-top: 131px;
+        }
+    }
+
 }
 
 .button_blur{
@@ -322,6 +472,9 @@
                     margin: 70px 0 70px 50px;
                 }
             }
+        }
+        &_title{
+            cursor: pointer;
         }
     }
     
