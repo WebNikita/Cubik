@@ -1,0 +1,77 @@
+@import 'variables';
+
+.error {
+  margin: 200px auto;
+  max-width: 500px;
+  cursor: default;
+
+  &__link {
+    cursor: pointer;
+    color: $blue;
+  }
+
+  &__margin {
+    margin-bottom: 50px;
+    &_5 {
+      margin-bottom: 5px;
+    }
+    &_40 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__code {
+    font-family: Montserrat, Inter, sans-serif;
+    font-size: 215px;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    color: $blue;
+  }
+
+  &__text {
+    font-family: Montserrat, Inter, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: $black;
+    letter-spacing: 0.03em;
+    
+    &_size {
+      font-size: 14px;
+      color: $gray-text;
+      letter-spacing: 0.045em;
+    }
+  }
+}
+
+@media screen {
+  @media (max-width: 500px) {
+    .error {
+      max-width: 280px;
+      &__code {
+        font-size: 120px;
+      }
+      &__text {
+        font-size: 25px;
+
+        &_size {
+          font-size: 10px;
+
+          &_mobile {
+            font-size: 11px;
+          }
+        }
+      }
+      &__link {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      &__margin {
+        margin-bottom: 25px;
+        &_40 {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
