@@ -1,0 +1,130 @@
+@import "valid";
+@import "grid";
+
+.card_title{
+    margin: 70px 0;
+
+    color: $black;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.block__card{
+    display: grid;
+    &_product{
+        display: grid;
+        grid-template-columns: 150px 50px 245px 155px 600px;
+        grid-template-rows: 200px;
+        margin: 30px 0;
+
+        &_img{
+            grid-column: 1/2;
+            background-color: $gray__product-back;
+            width: 150px;
+            height: 200px;
+            text-align: center;
+            padding: 5px 0;
+            
+            img{
+                width: 65px;
+                height: 190px;
+            }
+        }
+        &_info{
+            // background-color: $blue;
+            grid-column: 3/4;
+
+            margin-top: 60px;
+            &_name{
+                color: $black;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.03em;
+            }
+            &_article{
+                color: $gray__text;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            &_size{
+                margin-top: 30px;
+
+                color: $black;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        &_price{
+            // background-color: $blue;
+            grid-column: 5/6;
+
+            margin-top: 60px;
+        }
+    }
+    &_order{
+        margin-top: 70px;
+        margin-bottom: 150px;
+
+        display: grid;
+        grid-template-columns: 430px 167px 105px 148px 350px;
+
+        &_info{
+            display: flex;
+            align-items: center;
+
+            color: $black;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration-line: underline;
+        }
+        &_end-price{
+            grid-column: 3/4;
+            
+            display: flex;
+            align-items: center;
+
+            color: $black;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &_append{
+            grid-column: 5/6;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-color: $blue;
+            color: white;
+            width: 350px;
+            height: 60px;
+
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+           
+        }
+    }
+}
