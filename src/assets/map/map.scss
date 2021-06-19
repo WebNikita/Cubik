@@ -1,0 +1,64 @@
+@import 'variables';
+
+.map {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 30px;
+  margin: 70px auto!important;
+  letter-spacing: 0.03em;
+  color: $black;
+
+  &__grid {
+    grid-column: 1 / span 2;
+  }
+
+  &__hr {
+    border: 1px solid #C4C4C4;
+  }
+
+  &__main {
+
+    &-list {
+      margin-bottom: 14px;
+
+      a {
+        color: $blue;
+        font-size: 15px;
+        text-decoration: none;
+      }
+    }
+
+    &-name {
+      font-size: 20px;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    color: $blue;
+  }
+
+  &__list {
+    padding-bottom: 1px;
+    //font-size: 14px;
+
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: $black;
+
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__margin {
+    margin-bottom: 70px;
+
+    &_20 {
+      margin-bottom: 20px;
+    }
+  }
+}

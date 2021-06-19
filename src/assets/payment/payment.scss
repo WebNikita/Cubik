@@ -1,0 +1,12 @@
+@import 'variables';
+
+.payment {
+
+  &__name {
+    color: $black;
+    max-width: 600px;
+  }
+  &__h3 {
+    color: $blue;
+  }
+}

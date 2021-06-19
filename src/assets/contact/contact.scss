@@ -1,0 +1,136 @@
+@import 'variables';
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 50px;
+  column-gap: 40px;
+  margin: 70px auto;
+  color: $black;
+  letter-spacing: 0.03em;
+
+  &__map {
+    max-width: 775px;
+    max-height: 450px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+  }
+
+  &__white-space {
+    white-space: pre-line;
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    row-gap: 15px;
+  }
+
+  &__font-size {
+    &_20 {
+      font-family: Montserrat, Inter, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &_18 {
+      font-family: Montserrat, Inter, sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    &_16 {
+      font-family: Montserrat, Inter, sans-serif;
+      font-size: 16px;
+    }
+    &_14 {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  &__code {
+    font-weight: 300;
+  }
+
+  &__margin {
+    margin-bottom: 60px;
+
+    &_10 {
+      margin-bottom: 10px;
+    }
+    &_20 {
+      margin-bottom: 20px;
+    }
+    &_30 {
+      margin-bottom: 30px;
+    }
+    &_50 {
+      margin-bottom: 50px;
+    }
+    &_70 {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__our {
+    display: grid;
+    row-gap: 10px;
+  }
+}
+
+@media screen {
+  @media (max-width: 1220px) {
+    .contact {
+      &__margin_mobile {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .contact {
+      grid-template-columns: auto;
+      margin-top: 30px;
+      row-gap: 0;
+      &__grid {
+        row-gap: 11px;
+      }
+      &__map {
+        max-width: none;
+        height: 300px;
+        grid-column: auto;
+        grid-row: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      &__margin {
+        margin-bottom: 40px;
+        &_30 {
+          margin-bottom: 20px;
+        }
+        &_70 {
+          margin-bottom: 40px;
+        }
+      }
+      &__font-size {
+        &_20 {
+          font-size: 18px;
+        }
+        &_16 {
+          //font-size: 14px;
+        }
+      }
+    }
+  }
+}
