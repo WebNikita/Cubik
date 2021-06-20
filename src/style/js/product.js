@@ -20,9 +20,16 @@ $('.open-size').on('click', function() {
   $('.container').css('opacity', '0.5');
 });
 
+$('.block__card_order_append').on('click', function() {
+  console.log('on');
+  $('.block__append-order').css('display', 'block');
+  $('.container').css('opacity', '0.5');
+});
+
 $('.close').on('click', function() {
   console.log('off');
   $('.block__append-to-card').css('display', 'none');
+  $('.block__append-order').css('display', 'none');
   $('.block__size').css('display', 'none');
   $('.container').css('opacity', '1');
 });

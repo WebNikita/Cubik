@@ -50,3 +50,10 @@
     grid-template-columns: 1200px;
     justify-content: center;
 }
+
+.container__append-order{
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 400px;
+    justify-content: center;
+}

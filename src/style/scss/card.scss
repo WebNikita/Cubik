@@ -128,3 +128,20 @@
         }
     }
 }
+
+.block__append-order{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    // height: 900px;
+    background-color: white;
+    &_title{
+        margin-top: 50px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

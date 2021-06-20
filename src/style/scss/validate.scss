@@ -1,0 +1,41 @@
+.data {
+    display: grid;
+    row-gap: 40px;
+
+    &__label {
+        display: grid;
+        row-gap: 40px;
+
+        input {
+            padding: 10px 0;
+            background: inherit;
+            border: none;
+            border-bottom: 1px solid #C4C4C4;
+            outline: none;
+            font-family: Montserrat, Inter, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    &__text {
+        font-size: 14px;
+        color: $black;
+        margin-bottom: 30px;
+        a {
+            color: inherit;
+        }
+    }
+    &__button {
+        background: $blue;
+        color: white;
+        border: none;
+        padding: 19px;
+        max-width: 300px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+button{
+    border:none;
+}
