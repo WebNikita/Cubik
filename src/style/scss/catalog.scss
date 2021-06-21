@@ -15,6 +15,7 @@
 
 .block__sidebar{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     margin-top: 95px !important;
@@ -36,14 +37,20 @@
 
         &_filter{
             @extend %display_none;
+            // display: flex;
+            justify-content: flex-end;
             position: absolute;
-            grid-template-columns: auto;
-            width: 350px;
+            width: 1200px;
+            left: 0;
+            // margin: auto;
+            // left: 1rem;
+            // padding-top: 10px;
             padding-top: 10px;
-            // padding-top: 20px;
             background-color: white;
             
             ul{
+                margin-top: 20px;
+                user-select: none;
                 li{
                     margin-bottom: 5px;
                     cursor: pointer;
@@ -57,18 +64,22 @@
                 li:hover{
                     text-decoration: underline;
                 }
-                .filter_first_one-head{
-                    padding: 20px 0 10px 0;
-                }
                 p{
                     cursor: pointer;
-                    padding-bottom: 10px;
+                    // padding-bottom: 10px;
                 }
             }
+            &_first{
+                padding: 0 20px;
+            }
+            &_second{
+                padding: 0 20px;
+            }
+            &_third{
+                padding: 0 20px;
+            }
             &_fourth{
-                li:last-child{
-                    padding-bottom: 10px;
-                }
+                padding: 0 20px;
             }
         }
 

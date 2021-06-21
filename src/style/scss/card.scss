@@ -1,5 +1,6 @@
 @import "valid";
 @import "grid";
+@import "animation";
 
 .card_title{
     margin: 70px 0;
@@ -130,7 +131,7 @@
 }
 
 .block__append-order{
-    display: none;
+    @extend %display_none;
     position: absolute;
     top: 0;
     left: 0;
@@ -143,5 +144,7 @@
         display: flex;
         justify-content: space-between;
     }
-
+    &_form{
+        margin-bottom: 50px;
+    }
 }

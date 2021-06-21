@@ -1,5 +1,6 @@
 @import "valid";
 @import "grid";
+@import "animation";
 
 // .container__product_info.blur{
 //     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
@@ -224,7 +225,7 @@
 }
 
 .block__append-to-card{
-    display: none;
+    @extend %display_none;
     position: absolute;
     top: 0;
     left: 0;
@@ -260,7 +261,7 @@
 }
 
 .block__size{
-    display: none;
+    @extend %display_none;
     position: absolute;
     top: 0;
     left: 0;
@@ -282,7 +283,7 @@
                 margin: 15px 0 15px 50px;
             }
             &_table{
-                display: none;
+                @extend %display_none;
 
                 p:first-child{
                     margin-top: 70px;
@@ -325,7 +326,7 @@
                 margin: 15px 0 15px 50px;
             }
             &_table{
-                display: none;
+                @extend %display_none;
 
                 p:first-child{
                     margin-top: 70px;
@@ -368,7 +369,7 @@
                 margin: 15px 0 15px 50px;
             }
             &_table{
-                display: none;
+                @extend %display_none;
 
                 p:first-child{
                     margin-top: 70px;
@@ -415,7 +416,7 @@
                 margin: 15px 0 15px 50px;
             }
             &_table{
-                display: none;
+                @extend %display_none;
                 li{
                     padding-bottom: 30px;
                 }
@@ -435,7 +436,7 @@
                 margin: 15px 0 15px 50px;
             }
             &_table{
-                display: none;
+                @extend %display_none;
                 
                 li{
                     padding-bottom: 30px;
@@ -457,7 +458,7 @@
                 margin: 15px 0 15px 50px;
             }
             &_table{
-                display: none;
+                @extend %display_none;
 
                 li{
                     padding-bottom: 30px;

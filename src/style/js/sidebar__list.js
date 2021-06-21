@@ -4,7 +4,7 @@ import * as $ from 'jquery';
 
 $('.sidebar__filter').hover(function() {
   $(this).children('p').css('color', '#4C95BD');
-  $('.sidebar__list_filter').css('display', 'block');
+  $('.sidebar__list_filter').css('display', 'flex');
   $('.filter__button').children().css('fill', '#4C95BD');
   $('.filter__button').css({transform: 'rotate(180deg)'});
 }, function() {
