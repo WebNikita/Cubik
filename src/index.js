@@ -1,5 +1,6 @@
 import '@js/main.js';
-import '@js/sidebar__list.js';
+import '@js/sidebar_list.js';
+import '@js/catalog_preview.js';
 import '@js/product.js';
 import '@js/product_info.js';
 import '@js/product_counter.js';

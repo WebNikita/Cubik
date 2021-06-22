@@ -121,7 +121,10 @@
                 text-decoration: underline;
             }
         }
-        
+
+        p:hover{
+            cursor: pointer;
+        }
     }
 }
 
@@ -140,6 +143,32 @@
             background-color: $gray__product-back;
             width: auto;
             height: 500px;
+
+            .quickly__preview{
+                display: none;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                background-color: #F9F9F9;
+                width: 350px;
+                height: 500px;
+                opacity: 0.7;
+                
+                p{
+                    margin-bottom: 65px;
+                    color: $gray__text;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                p:hover{
+                    cursor: pointer;
+                    color: $black;
+                    text-decoration: underline;
+                }
+            }
         }
         &__text{
             display: flex;
@@ -158,12 +187,18 @@
             }
         }
     }
+    .card:hover {
+        .quickly__preview{
+            display: flex;
+        }
+    }
 }
 
 .block__page{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 150px !important;
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
     .page__next{
         margin-left:20px;
         .arrow_next{
@@ -190,5 +225,27 @@
     }
     ul{
         display: flex;
+    }
+}
+
+.block__preview{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    height: 900px;
+    .close_preview{
+        display: flex;
+        justify-content: flex-end;
+
+        cursor: pointer;
+
+        color: $gray__text;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
     }
 }

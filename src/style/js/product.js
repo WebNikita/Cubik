@@ -31,5 +31,6 @@ $('.close').on('click', function() {
   $('.block__append-to-card').css('display', 'none');
   $('.block__append-order').css('display', 'none');
   $('.block__size').css('display', 'none');
-  $('.container').css('opacity', '1');
+  $('.container__product_preview').css('opacity', '1');
+  $('.container__product_info').css('opacity', '1');
 });
