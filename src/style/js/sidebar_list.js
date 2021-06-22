@@ -64,10 +64,6 @@ $('.filter_first_four-head').on('click', function() {
   $('.filter_first_four-content').toggleClass('on');
 });
 
-$('.filter_first').children().on('click', function() {
-  $(this).toggleClass('select');
-});
-
 $('.page__list').children().on('click', function() {
   $(this).toggleClass('select_page');
 });
