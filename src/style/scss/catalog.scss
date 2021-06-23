@@ -91,7 +91,7 @@
             grid-template-columns: auto;
             width: 175px;
             padding-top: 10px;
-            background-color: whitez;
+            background-color: white;
             li{
                 margin-bottom: 10px;
             }
@@ -248,5 +248,27 @@
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
+    }
+}
+
+.block__select-filter{
+    // position: absolute;
+    // top: 0;
+    // margin-top: 60px;
+    // z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    // margin-top: 30px !important;
+    // margin-bottom: 70px !important;
+    li{
+        list-style: none;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        
+        .delete-filter:hover{
+            cursor: pointer;
+        }
     }
 }

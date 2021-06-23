@@ -97,7 +97,7 @@ class Slider {
     this.changeDisabledNav();
 
     Array.from(this.slideNodes).forEach((slideNodes) => {
-      slideNodes.style.width = `${this.width}px`,
+      slideNodes.style.width = `5px`,
       slideNodes.style.marginRight = `${this.settings.margin}px`;
     });
   }

@@ -8,9 +8,9 @@ $('.sidebar__filter').hover(function() {
   $('.filter__button').children().css('fill', '#4C95BD');
   $('.filter__button').css({transform: 'rotate(180deg)'});
 }, function() {
-  $(this).children('p').css('color', '#A0A0A0');
+  $(this).children('p').css('color', '#767676');
   $('.sidebar__list_filter').css('display', 'none');
-  $('.filter__button').children().css('fill', '#A0A0A0');
+  $('.filter__button').children().css('fill', '#767676');
   $('.filter__button').css({transform: 'rotate(0deg)'});
 });
 
@@ -22,9 +22,9 @@ $('.sidebar__sort').hover(function() {
   $('.sort__button').children().css('fill', '#4C95BD');
   $('.sort__button').css({transform: 'rotate(180deg)'});
 }, function() {
-  $(this).children('p').css('color', '#A0A0A0');
+  $(this).children('p').css('color', '#767676');
   $('.sidebar__list_sort').css('display', 'none');
-  $('.sort__button').children().css('fill', '#A0A0A0');
+  $('.sort__button').children().css('fill', '#767676');
   $('.sort__button').css({transform: 'rotate(0deg)'});
 });
 
@@ -36,9 +36,9 @@ $('.sidebar__reveal').hover(function() {
   $('.reveal__button').children().css('fill', '#4C95BD');
   $('.reveal__button').css({transform: 'rotate(180deg)'});
 }, function() {
-  $(this).children('p').css('color', '#A0A0A0');
+  $(this).children('p').css('color', '#767676');
   $('.sidebar__list_reveal').css('display', 'none');
-  $('.reveal__button').children().css('fill', '#A0A0A0');
+  $('.reveal__button').children().css('fill', '#767676');
   $('.reveal__button').css({transform: 'rotate(0deg)'});
 });
 
