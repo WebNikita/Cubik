@@ -12,6 +12,10 @@ $('.sidebar__filter').hover(function() {
   $('.sidebar__list_filter').css('display', 'none');
   $('.filter__button').children().css('fill', '#767676');
   $('.filter__button').css({transform: 'rotate(0deg)'});
+  if ($('.block__select-filter').children('li').length!=0) {
+    $('.sidebar__filter').children('p').css('color', '#4C95BD');
+    $('.filter__button').html('<path fill="#4C95BD" d="M10 1.178L8.822 0 5 3.822 1.178 0 0 1.178 3.822 5 0 8.822 1.178 10 5 6.178 8.822 10 10 8.822 6.178 5 10 1.178z"/>');
+  }
 });
 
 // Открытие сортировки

@@ -32,6 +32,8 @@ function check(className) {
     if ($('.block__select-filter').children('li').length==0) {
       $('.block__sidebar').css('cssText', 'margin-bottom: 130px !important;');
       $('.block__select-filter').css('cssText', 'margin-top: 0px !important; margin-bottom: 0px !important;');
+      $('.sidebar__filter').children('p').css('cssText', 'color: #767676 !important');
+      $('.filter__button').html('<path fill="#767676" d="M8.833 1.917L5 5.75 1.167 1.917 0 3.083l5 5 5-5-1.167-1.167z"/>');
     }
   }
   $('.delete-filter').on('click', function() {
