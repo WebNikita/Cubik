@@ -8,6 +8,10 @@
     color: $blue;
 }
 
+.block__sidebar_phone{
+    display:none;
+}
+
 .select_page{
     // text-decoration: underline;
     color: $blue;
@@ -175,14 +179,33 @@
             display: flex;
             flex-direction: column;
             height: 100px;
+            &_name{
+                margin-top: 10px;
+
+                color: $black;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &_article{
+                color: $gray__text;
+
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+            }
             &_low{
                 margin-top: auto;
                 display: flex;
                 // align-items: flex-end;
 
-                font-family: Inter;
+                font-family: Montserrat;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 20px;
                 line-height: 24px;
             }
@@ -202,15 +225,37 @@
     margin-bottom: 100px !important;
     .page__next{
         margin-left:20px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
         .arrow_next{
             margin-left: 13px;
         }
     }
     .page__prev{
         margin-right:61px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
         .arrow_prev{
             margin-right: 13px;
         }
+    }
+    .page__list{
+        display: flex;
+        justify-content: center;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
     }
     div:hover{
         cursor: pointer;
@@ -218,14 +263,11 @@
     }
     li{
         list-style: none;
-        margin-right: 41px;
+        margin-right: 40px;
     }
     li:hover{
         cursor: pointer;
         text-decoration: underline;
-    }
-    ul{
-        display: flex;
     }
 }
 
@@ -263,7 +305,6 @@
     // margin-top: 30px !important;
     // margin-bottom: 70px !important;
     li{
-        user-select: none;
         list-style: none;
         margin-right: 30px;
         margin-bottom: 20px;
@@ -271,5 +312,180 @@
         .delete-filter:hover{
             cursor: pointer;
         }
+    }
+}
+
+@media (max-width: 425px){
+    .block__sidebar{
+        display:none;
+    }
+    .block__sidebar_phone{
+        display:block;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        .sidebar{
+            &__category{
+                margin-bottom: 20px;
+                color: $blue;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            &__list{
+                display: grid;
+                grid-template-columns: auto auto;
+                button{
+                    min-width: 160px;
+                    height: 40px;
+                    color: $gray__text;
+                    background-color: $gray__product-back_hover;
+
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 11px;
+                    line-height: 13px;
+
+                    text-transform: uppercase;
+                }
+            }
+            &__sort_phone{
+                border-right: 1px solid #C4C4C4;
+            }
+        }
+    }
+    .block__card{
+        .card{
+            width: 135px;
+            height: 250px;
+            // background-color: $gray__text;
+            &__img{
+                width: auto;
+                height: 192px;
+
+                img{
+                    width: auto;
+                    height: 180px;
+                }
+            }
+            &__text{
+                height: 60px;
+                &_name{
+                    margin-top: 5px;
+                    font-size: 9px;
+                    line-height: 11px;
+                }
+                &_article{
+                    font-size: 8px;
+                    line-height: 10px;
+                }
+                &_low{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .card:hover{
+            .quickly__preview{
+                display: none;
+            }
+        }
+    }
+    .block__page{
+        justify-content: space-between;
+        margin-top: 50px !important;
+        .page__prev{
+            margin-right: 30px;
+
+            font-size: 11px;
+            line-height: 13px;
+            .arrow_prev{
+                margin: 0;
+            }
+        }
+        .page__next{
+            margin: 0;
+
+            font-size: 11px;
+            line-height: 13px;
+            .arrow_next{
+                margin: 0;
+            }
+        }
+        .page__list{
+            justify-content: center;
+            align-items: center;
+
+            font-size: 11px;
+            line-height: 13px;
+        }
+        li{
+            margin-right: 30px;
+        }
+    }
+
+    %block__filter{
+        display: none;
+        position: absolute;
+        top: 0;
+        background-color: white;
+        width: 100vw;
+
+        .close_phone{
+            margin: 19px 0 19px 20px;
+            display: flex;
+            align-items: center;
+
+            p{
+                margin-left: 10px;
+
+                color: $gray__text;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 13px;
+            }
+        }
+        li{
+            list-style: none;
+            margin: 13px 20px;
+            
+            color: $gray__text;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+        }
+        hr{
+            margin: 0 10px;
+        }
+        hr:last-child{
+            margin-bottom: 20px;
+        }
+    }
+    .block__filter_phone{
+        @extend %block__filter;
+    }
+    .block__filter_one{
+        @extend %block__filter;
+    }
+    .block__filter_two{
+        @extend %block__filter;
+    }
+    .block__filter_three{
+        @extend %block__filter;
+    }
+    .block__filter_four{
+        @extend %block__filter;
+    }
+    .block__sort_phone{
+        @extend %block__filter;
     }
 }
